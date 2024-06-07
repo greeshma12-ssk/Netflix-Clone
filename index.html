@@ -1,289 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/53380e32fd.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div id="header">
-      <div class="container">
-        <nav>
-          <img src="images/background.png" class="logo" />
-          <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#Summer Internships">Internships</a></li>
-            <li><a href="#Certifications">Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <i class="fas fa-times onclick="closemenu()"></i>
-          </ul>
-          <i class="fas fa-bars onclick="openmenu()"></i>
-        </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Website Clone - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+    <nav>
+        <img src="images/logo.png" class="logo">
+        <div>
+            <button class="language-btn">English <img src="images/down-icon.png"></button>
+            <button>Sign In</button>
+        </div>
+    </nav>
+    <div class="header-content">
+        <h1>Unlimited movies, Tv shows and more.</h1>
+        <h3>Watch anywhere. Cancel anytime.</h3>
+        <p>Ready to Watch? Enter your email to create or restart your membership.</p>
+        <form class="email-signup">
+            <input type="email" placeholder="Email address" required>
+            <button type="submit">Get Started</button>
+        </form>
+    </div>
+</div> 
+<div class="features">
+    <div class="row">
+        <div class="text-col">
+            <h2>Enjoy on your Tv.</h2>
+            <p>Watch on smart Tvs, PlayStation, Xbox, Chromecast, Apple Tv, Blu-ray
+                players and more.</p>
+        </div>
+        <div class="img-col">
+            <img src="images/feature-1.png">
+        </div>
+    </div>
+    <div class="row">
+        <div class="img-col">
+            <img src="images/feature-2.png">
+        </div>
+        <div class="text-col">
+            <h2>Download your shows to watch offline.</h2>
+            <p>Save your favorites easily and always have something to watch.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="text-col">
+            <h2>Watch everywhere.</h2>
+            <p>Stream unlimited movies and Tv shows on your phone, tablet, laptop and 
+            TV.</p>
+        </div>
+        <div class="img-col">
+            <img src="images/feature-3.png">
+        </div>
+    </div>
+    <div class="row">
+        <div class="img-col">
+            <img src="images/feature-4.png">
+        </div>
+        <div class="text-col">
+            <h2>Create profiles for children</h2>
+            <p>Send children on adventures with their favourite characters in a space
+            made just for them-free with your membership</p>
+        </div>
+        
+    </div>
+</div> 
 
-        <div class="header-text">
-          <h1>
-            I'm <span>Somagani Sri Sai Karthikeya Greeshma</span><br />
-          </h1>
-        </div>
-      </div>
-    </div>
 
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="images/logo.png.png" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p>
-              As an aspiring professional eager to embark on a journey , I am
-              driven by curiosity and a relentless pursuit of learning. My
-              academic background coupled with hands-on projects has equipped me
-              with foundational skills . With a keen eye for detail and a
-              passion for problem-solving, I am enthusiastic about contributing
-              fresh perspectives and embracing challenges in the dynamic
-              landscape . I am eager to leverage my academic insights and
-              dedication to excellence to make valuable contributions to your
-              esteemed organization.
-            </p>
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills') ">
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab('projects')">Projects</p>
-              <p class="tab-links" onclick="opentab('eduaction')">Education</p>
+<div class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <ul class="accordion">
+        <li>
+            <input type="radio" name="accordion" id="first">
+            <label for="first">What is Netflix?</label>
+            <div class="content">
+                <p>Netflix is a subscription-based streaming service that allows our members to watch TV shows 
+                    and movies on an internet-connected device.</p>
             </div>
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li><span>Programming Languages</span><br />C,Python,Java</li>
-                <li><span>Web Development</span><br />HTML,CSS,Java Script</li>
-                <li>
-                  <span>Ethical Hacker</span><br />Cyber Security and Ethical
-                  Hacking
-                </li>
-              </ul>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="second">
+            <label for="second">How much does Netflix cost?</label>
+            <div class="content">
+                <p>Netflix offers a variety of plans to meet your entertainment needs.</p>
             </div>
-            <div class="tab-contents" id="projects">
-              <ul>
-                <li>
-                  <span>System Hacking</span><br />Cyber Security and Ethical
-                  Hacking
-                </li>
-                <li>
-                  <span>Spotify Clone</span><br />
-                  Web Development
-                </li>
-                <li><span> Dsicomfort Index </span><br />Hardware</li>
-              </ul>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="third">
+            <label for="third">Where can I watch?</label>
+            <div class="content">
+                <p>You can watch Netflix through any internet-connected device that offers the Netflix app, including smart TVs, game consoles, streaming media players, 
+                    set-top boxes, smartphones, and tablets.</p>
             </div>
-            <div class="tab-contents" id="eduaction">
-              <ul>
-                <li><span>2018-2019</span><br />SSC <br> 10 CGPA</li>
-                <li><span>2019-2021</span><br />Intermediate <br> 976 Marks</li>
-                <li><span>2021-2025(On going)</span><br />B.Tech <br> 9.62 CGPA</li>
-              </ul>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="fourth">
+            <label for="fourth">How do I cance?</label>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum earum iure quibusdam, voluptatibus assumenda aliquam doloribus doloremque repellendus repellat, eligendi et illum quod 
+                    architecto facere eum sint sunt voluptas recusandae.</p>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="Summer Internships">
-      <div class="container">
-        <h1 class="sub-title">My Internships</h1>
-        <div class="internships-list">
-          <div>
-            <i class="fa-brands fa-servicestack"></i>
-            <h2>Social Internship</h2>
-            <p>
-              I had participated and successfully completed the social
-              internship which was organized by Student Activity Centre(SAC)--KL
-              university.
-            </p>
-          </div>
-          <div>
-            <i class="fa-solid fa-network-wired"></i>
-            <h2>Cyber Security and Ethical Hacking,Coincent</h2>
-            <p>
-              I have successfully completed internship program in Cyber Security
-              and Ethical Hacking from 15th May, 2023 to 16th Jul, 2023.
-            </p>
-          </div>
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Web Development</h2>
-            <p>
-              I have successfully completed internship in Web Development which
-              was conducted by Internshala in an online mode.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="Certifications">
-      <div class="container">
-        <h1 class="sub-title">My Certifications</h1>
-        <div class="certifications-list">
-          <div class="Certificate">
-            <img src="images/work-1.png" />
-            <div class="layer">
-              <h3>Security, Compliance and Identity Fundamentals-MICROSOFT</h3>
-              <p>
-                "Proficient in Security, Compliance,Identity Fundamentals with
-                Microsoft Certification."
-              </p>
-              <a
-                href="https://drive.google.com/file/d/1nD0emKmzQmFJRviBh_3dNW1KoU8qQbg6/view?usp=sharing"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="fifth">
+            <label for="fifth">How can I watch on Netflix?</label>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum earum iure quibusdam, voluptatibus assumenda aliquam doloribus doloremque repellendus repellat, eligendi et illum quod 
+                    architecto facere eum sint sunt voluptas recusandae.</p>
             </div>
-          </div>
-          <div class="Certificate">
-            <img src="images/work-2.png" />
-            <div class="layer">
-              <h3>Ethical Hacking Essentials(EHE)-EC-Council</h3>
-              <p>
-                "Skilled in Ethical Hacking Essentials (EHE) certified by
-                EC-Council."
-              </p>
-              <a
-                href="https://drive.google.com/file/d/1tJvbi3V4QPrr7Lzsc0CfBP4dJ-lf6I6i/view?usp=sharing"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="sixth">
+            <label for="sixth">Is Netflix good for kids?</label>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum earum iure quibusdam, voluptatibus assumenda aliquam doloribus doloremque repellendus repellat, eligendi et illum quod 
+                    architecto facere eum sint sunt voluptas recusandae.</p>
             </div>
-          </div>
-          <div class="Certificate">
-            <img src="images/work-3.png" />
-            <div class="layer">
-              <h3>Cyber Security and Ethical Hacking-Coincent</h3>
-              <p>
-                "Certified in Cyber Security and Ethical Hacking by Coincent."
-              </p>
-              <a
-                href="https://drive.google.com/file/d/1WZw5tVkMVqPfO4HFe7EGywhKCZkL_E2Q/view?usp=sharing"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-          <div class="Certificate">
-            <img src="images/work-4.png" />
-            <div class="layer">
-              <h3>Web Development-Internshala</h3>
-              <p>"Completed Web Development training through Internshala."</p>
-              <a
-                href="https://drive.google.com/file/d/1592ksJAWN6EJ9VbG3CpoB0pR7W5tGDSG/view?usp=sharing"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <a
-          href="https://www.linkedin.com/in/sree-nikitha-reddy-823236226/"
-          class="btn"
-          >See more</a
-        >
-      </div>
-    </div>
-    <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p>
-              <i class="fa-sharp fa-solid fa-paper-plane"></i
-              >2100040028ece@gmail.com
-            </p>
-            <p><i class="fa-solid fa-square-phone"></i>9014897383</p>
-            <div class="social-icons">
-              <a
-                href="https://www.linkedin.com/in/sree-nikitha-reddy-823236226/"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a href="https://www.instagram.com/nikky_reddy_19/"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a href="https://github.com/Nikithareddy10"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </div>
-            <a href="images/Main resume nikitha.pdf" download class="btn btn2"
-              >Download Resume</a
-            >
-          </div>
-          <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required />
-              <input
-                type="email"
-                name="Email"
-                placeholder="Your Email"
-                required
-              />
-              <textarea
-                name="Message"
-                rows="6"
-                placeholder="Your Message"
-              ></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <span id="msg"></span>
-          </div>
-        </div>
-      </div>
-      <div class="copyright">
-        <p>
-          copyright ©  Made  <i class="fas fa-heart"></i> by
-          Sree Nikitha
-        </p>
-      </div>
-    </div>
+        </li>
+    </ul>
+    <small>Ready to Watch? Enter your email to create or restart your membership.
 
-    <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-      function opentab(tabname) {
-        for (tablink of tablinks) {
-          tablink.classList.remove("active-link");
-        }
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-      }
-    </script>
-    <script>
-      var sidemeu=document.getElementById("sidemenu");
-      function openmenu(){
-        sidemeu.style.right="0";
-      }
-      function closemenu(){
-        sidemeu.style.right="-200px";
-      }
-    </script>
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbwxmdwMTIawMnK83iH8NrTkn6M5p972DbsFrLgV1M6E_QEOEznPVbe7V6HVnHZxYyxmHQ/exec'
-      const form = document.forms['submit-to-google-sheet']
-      const msg=document.getElementById("msg")
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-            msg.innerHTML="Message sent successfully"
-            setTimeout(function(){
-              msg.innerHTML=""
-            },5000)
-            form.reset()
-          })
-          .catch(error => console.error('Error!', error.message))
-      })
-    </script>
-  </body>
+    </small>
+    <form class="email-signup">
+        <input type="email" placeholder="Email address" required>
+        <button type="submit">Get Started</button>
+    </form>
+</div>
+
+<div class="footer">
+    <h2>Questions? call 000-000-000-000</h2>
+    <div class="row">
+        <div class="col">
+            <a href="#">FAQ</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Privacy</a>
+            <a href="#">Speed Test</a>
+        </div>
+        <div class="col">
+            <a href="#">Help Centre</a>
+            <a href="#">Jobs</a>
+            <a href="#">Cookies Preferences</a>
+            <a href="#">Legal Notices</a>
+        </div>
+        <div class="col">
+            <a href="#">Account</a>
+            <a href="#">Ways to watch</a>
+            <a href="#">Corporate Information</a>
+            <a href="#">Only on Netflix</a>
+        </div>
+        <div class="col">
+            <a href="#">Media Centre</a>
+            <a href="#">Terms of use</a>
+            <a href="#">Contact US</a>
+        </div>
+    </div>
+    <button class="language-btn">English <img src="images/down-icon.png"></button>
+    <p class="copyright-txt">Netflix India</p>
+</div>
+</body>
 </html>
